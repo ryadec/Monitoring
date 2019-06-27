@@ -1,6 +1,10 @@
 ### Spark Streaming Monitoring Tools
 
 Add these files to your Spark Streaming project to receive health emails about your stream. 
+
+It is currently configured to send out an <strong>HOURLY</strong> email with metrics about your stream's health (no matter what)
+And it will separately send out any alerts for issues every 15minutes EX: <strong> i.e. Scheduling Delay, Batch Delay, Process Stopped, etc. </strong>
+
 The following is a sample email generated from this project.
 
 ![Sample Email](https://github.com/ryadec/Monitoring/blob/master/SampleEmail.png)
