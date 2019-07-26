@@ -17,7 +17,7 @@ class SparkMonitor extends SparkListener {
         "<br> <strong> ID: </strong>"+ taskGettingResult.taskInfo.id+
         "<br> <strong> Status: </strong>"+ taskGettingResult.taskInfo.status
       if((new Date().getTime - EmailUtil.LastErrorEmailTime.getTime) > 900000l ) {
-        EmailUtil.sendEmail(applicationStart.appName+" Task Not Completing!", body) //@TODO: change BedMasterLF to applicationStart.appName
+        EmailUtil.sendEmail(applicationStart.appName+" Task Not Completing!", body)
         EmailUtil.LastErrorEmailTime = new Date()
       }
     }
